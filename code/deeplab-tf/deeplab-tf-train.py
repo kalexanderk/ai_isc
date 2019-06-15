@@ -62,7 +62,7 @@ class StoreDictKeyPair(argparse.Action):
 
 
 #main function
-def main(device, input_path_train, input_path_validation, downsampling_fact, downsampling_mode, channels, data_format, label_id, weights, image_dir, checkpoint_dir, trn_sz, val_sz, loss_type, model, decoder, fs_type, optimizer, batch, batchnorm, num_epochs, dtype, disable_checkpoints, disable_imsave, tracing, trace_dir, output_sampling, scale_factor):
+def main(device, input_path_train, input_path_validation, downsampling_fact, downsampling_mode, channels, data_format, label_id, weights, image_dir, checkpoint_dir, trn_sz, val_sz, loss_type, model, decoder, fs_type, optimizer, batch, batchnorm, num_epochs, dtype, disable_checkpoints, disable_imsave, tracing, trace_dir, output_sampling, scale_factor, pre_trained_model):
     #init horovod
     comm_rank = 0
     comm_local_rank = 0
